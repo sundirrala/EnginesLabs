@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - PortalUpsideDown
+  - PortalRightSideUp
+  - RightsideUp
+  - UpsideDown
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Portal
+  - Water
+  - UI
+  - EditorOnly
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Skybox
+    uniqueID: 38374377
+    locked: 0
+  - name: Background
+    uniqueID: 3659744223
+    locked: 0
+  - name: Ground
+    uniqueID: 580475287
+    locked: 0
+  - name: OnGround
+    uniqueID: 4167922595
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 4064440271
+    locked: 0
+  - name: Sky
+    uniqueID: 2831404245
+    locked: 0
