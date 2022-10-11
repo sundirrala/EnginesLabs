@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterMovement : MonoBehaviour
 {
@@ -10,6 +11,9 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField]
     Rigidbody2D rigidBod;
+
+    //[SerializeField]
+    //LayerMask grass;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,5 +35,25 @@ public class CharacterMovement : MonoBehaviour
         // transform.position = currentPosition + new Vector3(inputX, inputY, 0) * moveSpeed * Time.deltaTime; //
 
         // no such thing as namespaces in c#, just put things in classes
+        ///*RandomBattleEncounters*/();
     }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(Random.Range(1, 101) <= 20)
+        {
+            SceneManager.LoadScene("GrassBattle");
+        }
+    }
+
+    //private void RandomBattleEncounters()
+    //{
+    //    if(Physics2D.OverlapCircle(transform.position, 0.2f, grass))
+    //    {
+    //        if (Random.Range(1, 101) <= 50)
+    //        {
+    //            SceneManager.LoadScene("GrassBattle");
+    //        }
+    //    }
+    //}
 }
