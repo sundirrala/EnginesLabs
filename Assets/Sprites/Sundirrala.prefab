@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: -6395129628015056186}
   - component: {fileID: 7446758202633574866}
   - component: {fileID: 1840580216197949573}
+  - component: {fileID: 4888980540215593855}
   m_Layer: 0
   m_Name: Sundirrala
   m_TagString: Untagged
@@ -151,7 +152,7 @@ Transform:
   m_Children:
   - {fileID: 7091314986684247652}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8261171365180723694
 SpriteRenderer:
@@ -268,3 +269,16 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0002771983, y: 0.03}
   m_Size: {x: 0.103998736, y: 0.049105696}
   m_Direction: 1
+--- !u!114 &4888980540215593855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8261171365180723695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1596fb3cc64dca42805a5af4237c4e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 8261171365180723695}
