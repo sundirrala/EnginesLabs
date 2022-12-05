@@ -42,8 +42,9 @@ public class PortalTravel : MonoBehaviour
     {
         musicAnim.SetTrigger("fadeOut");
         yield return new WaitForSeconds(waitTime);
+        //SceneManager.LoadScene(tag, LoadSceneMode.Single);
     }
-    
+
     IEnumerator ChangeScenesCrossFade()
     {
         sceneTransition.SetTrigger("Start");
