@@ -12,6 +12,11 @@ public class CharacterMovement : MonoBehaviour
     [SerializeField]
     Rigidbody2D rigidBod;
 
+    [SerializeField]
+    Animator animator;
+
+    Vector2 movement;
+
     //[SerializeField]
     //LayerMask grass;
     // Start is called before the first frame update
@@ -29,7 +34,15 @@ public class CharacterMovement : MonoBehaviour
         float inputX = Input.GetAxisRaw("Horizontal");
         float inputY = Input.GetAxisRaw("Vertical");
 
+        movement.x = Input.GetAxisRaw("Horizontal");
+        movement.y = Input.GetAxisRaw("Vertical");
+
         Vector3 currentPosition = transform.position;
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
+        animator.SetFloat("Speed", movement.sqrMagnitude);
+
 
         rigidBod.MovePosition(currentPosition + new Vector3(inputX, inputY, 0) * moveSpeed * Time.deltaTime);
 
