@@ -54,13 +54,13 @@ public class CharacterMovement : MonoBehaviour
         ///*RandomBattleEncounters*/();
     }
 
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if(Random.Range(1, 101) <= 20)
-        {
-            SceneManager.LoadScene("GrassBattle");
-        }
-    }
+    //void OnTriggerEnter2D(Collider2D collision)
+    //{
+    //    if(Random.Range(1, 101) <= 20)
+    //    {
+    //        SceneManager.LoadScene("GrassBattle");
+    //    }
+    //}
 
     //private void RandomBattleEncounters()
     //{
