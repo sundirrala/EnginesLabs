@@ -292,6 +292,14 @@ PrefabInstance:
       propertyPath: targetPortal
       value: SpawnPointRightSideUp
       objectReference: {fileID: 0}
+    - target: {fileID: 1276769390, guid: 65578a250ab8c7749be42be975f0fbc1, type: 3}
+      propertyPath: crossfadeTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1276769390, guid: 65578a250ab8c7749be42be975f0fbc1, type: 3}
+      propertyPath: sceneTransition
+      value: 
+      objectReference: {fileID: 5874673385686116015, guid: af9e4775fa707994c8458ce993da6cd7, type: 3}
     - target: {fileID: 7642433607040052189, guid: 65578a250ab8c7749be42be975f0fbc1, type: 3}
       propertyPath: m_Name
       value: PortalUpsideDownToRightsideUp

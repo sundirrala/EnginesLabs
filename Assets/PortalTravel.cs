@@ -19,7 +19,11 @@ public class PortalTravel : MonoBehaviour
     public string targetPortal = "";
 
     public Animator musicAnim;
+    public Animator sceneTransition;
     public float waitTime;
+    public float crossfadeTime;
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -29,14 +33,23 @@ public class PortalTravel : MonoBehaviour
         {
             Debug.Log("Portal Warping: " + trav.gameObject.name);
             trav.SetSpawn(targetPortal);
-            StartCoroutine(ChangeScenes());
+            StartCoroutine(ChangesScenesMusicTransition());
+            StartCoroutine(ChangeScenesCrossFade());
             //SceneManager.LoadScene(tag, LoadSceneMode.Single);
         }    
     }
-    IEnumerator ChangeScenes()
+    IEnumerator ChangesScenesMusicTransition()
     {
         musicAnim.SetTrigger("fadeOut");
         yield return new WaitForSeconds(waitTime);
+    }
+    
+    IEnumerator ChangeScenesCrossFade()
+    {
+        sceneTransition.SetTrigger("Start");
+        yield return new WaitForSeconds(crossfadeTime);
         SceneManager.LoadScene(tag, LoadSceneMode.Single);
     }
+
+
 }
